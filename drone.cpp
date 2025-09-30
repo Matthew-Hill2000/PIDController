@@ -90,7 +90,7 @@ public:
 
     this->last_action = std::vector<double>{u1, u2};
 
-    this->left_rotor.set_throttle(u1);
+    this->left_rotor.set_throttle(u1);     
     this->right_rotor.set_throttle(u2);
 
     this->left_rotor.step(dt);
