@@ -1,8 +1,7 @@
-#include <iostream>
-#include <vector>
 
+#include <algorithm>
 class PIDController {
-private:
+ private:
   double kp;
   double ki;
   double kd;
@@ -11,7 +10,7 @@ private:
   double min_output{-1.0};
   double max_output{1.0};
 
-public:
+ public:
   PIDController(double kp, double ki, double kd) : kp{kp}, ki{ki}, kd{kd} {}
 
   double compute(double error, double dt) {
@@ -26,4 +25,3 @@ public:
     return output;
   }
 };
-
